@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" width="260" height="380">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="80%" r="60%"><stop offset="0%" stop-color="#180e06"/><stop offset="100%" stop-color="#0d0a07"/></radialGradient>
+    <radialGradient id="skin" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#8a6040"/><stop offset="100%" stop-color="#5a3820"/></radialGradient>
+  </defs>
+  <rect width="260" height="380" fill="url(#bg)"/>
+  <!-- cuerpo — frac criollo oscuro -->
+  <path d="M82 380 L90 225 Q130 210 170 225 L178 380Z" fill="#1a1408"/>
+  <!-- chaleco claro -->
+  <path d="M110 228 Q130 220 150 228 L152 280 Q130 285 108 280Z" fill="#c8b890"/>
+  <!-- corbatín blanco -->
+  <path d="M122 228 L130 240 L138 228 L130 222Z" fill="#e8e0d0"/>
+  <!-- brazo izquierdo sosteniendo libro -->
+  <rect x="82" y="225" width="14" height="70" rx="6" fill="#1a1408"/>
+  <!-- libro abierto -->
+  <rect x="58" y="270" width="70" height="50" rx="4" fill="#c8a860"/>
+  <line x1="93" y1="270" x2="93" y2="320" stroke="#8a6020" stroke-width="1.5"/>
+  <line x1="65" y1="280" x2="90" y2="280" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <line x1="65" y1="287" x2="90" y2="287" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <line x1="65" y1="294" x2="90" y2="294" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <line x1="96" y1="280" x2="121" y2="280" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <line x1="96" y1="287" x2="121" y2="287" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <line x1="96" y1="294" x2="121" y2="294" stroke="#5a3010" stroke-width="0.8" opacity="0.6"/>
+  <!-- cabeza inclinada hacia el libro -->
+  <ellipse cx="132" cy="178" rx="30" ry="35" fill="url(#skin)"/>
+  <!-- pelo con raya al costado, estilo criollo ilustrado -->
+  <path d="M102 170 Q132 148 162 170 Q162 158 132 152 Q102 158 102 170Z" fill="#2a1a0a"/>
+  <!-- peluca / pelo empolvado levemente -->
+  <path d="M100 172 Q96 180 98 192" stroke="#3a2a12" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M164 172 Q168 180 166 192" stroke="#3a2a12" stroke-width="3" fill="none" opacity="0.4"/>
+  <!-- ojos inteligentes, mirando el libro (levemente hacia abajo) -->
+  <ellipse cx="118" cy="182" rx="5" ry="5.5" fill="#1a1006"/>
+  <ellipse cx="146" cy="182" rx="5" ry="5.5" fill="#1a1006"/>
+  <circle cx="117" cy="180" r="1.5" fill="#fff" opacity="0.6"/>
+  <circle cx="145" cy="180" r="1.5" fill="#fff" opacity="0.6"/>
+  <!-- cejas reflexivas -->
+  <path d="M112 175 Q118 172 124 175" stroke="#2a1a06" stroke-width="1.2" fill="none"/>
+  <path d="M140 175 Q146 172 152 175" stroke="#2a1a06" stroke-width="1.2" fill="none"/>
+  <!-- nariz fina -->
+  <path d="M130 188 Q132 196 134 188" stroke="#4a2a10" stroke-width="1" fill="none"/>
+  <!-- boca pensativa -->
+  <path d="M122 200 Q132 203 142 200" stroke="#6a3820" stroke-width="1.3" fill="none"/>
+  <!-- luz de vela en el libro -->
+  <ellipse cx="93" cy="300" rx="40" ry="30" fill="rgba(212,160,60,0.06)"/>
+</svg>

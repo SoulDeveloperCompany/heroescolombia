@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" width="480" height="844">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a2008"/><stop offset="60%" stop-color="#2a1a06"/><stop offset="100%" stop-color="#3a2008"/></linearGradient>
+    <linearGradient id="tierra" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a1a06"/><stop offset="100%" stop-color="#1a0e04"/></linearGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#sky)"/>
+  <!-- sol poniente -->
+  <circle cx="240" cy="320" r="60" fill="#c87010" opacity="0.35"/>
+  <circle cx="240" cy="320" r="40" fill="#e09020" opacity="0.3"/>
+  <!-- nubes de llano -->
+  <ellipse cx="120" cy="260" rx="90" ry="30" fill="rgba(180,120,40,0.12)"/>
+  <ellipse cx="360" cy="240" rx="70" ry="22" fill="rgba(180,120,40,0.1)"/>
+  <ellipse cx="240" cy="200" rx="120" ry="35" fill="rgba(140,100,30,0.1)"/>
+  <!-- horizonte plano de los llanos -->
+  <rect x="0" y="520" width="480" height="324" fill="url(#tierra)"/>
+  <!-- sabana — pastos largos ondulantes -->
+  <path d="M0 520 Q60 510 120 522 Q180 515 240 520 Q300 512 360 522 Q420 515 480 520 L480 540 Q420 530 360 538 Q300 528 240 538 Q180 532 120 540 Q60 528 0 540Z" fill="rgba(40,50,10,0.6)"/>
+  <!-- palmeras de llano (moriche) -->
+  <rect x="80" y="400" width="6" height="130" fill="#2a1a06"/>
+  <ellipse cx="83" cy="395" rx="25" ry="40" fill="rgba(30,50,10,0.7)" transform="rotate(-10 83 395)"/>
+  <rect x="370" y="420" width="5" height="110" fill="#2a1a06"/>
+  <ellipse cx="372" cy="415" rx="20" ry="35" fill="rgba(30,50,10,0.6)" transform="rotate(8 372 415)"/>
+  <rect x="200" y="435" width="4" height="90" fill="#2a1a06"/>
+  <ellipse cx="202" cy="430" rx="18" ry="30" fill="rgba(30,50,10,0.55)"/>
+  <!-- rebaño de ganado en la distancia -->
+  <ellipse cx="310" cy="532" rx="8" ry="5" fill="#1a0e04" opacity="0.7"/>
+  <ellipse cx="325" cy="530" rx="7" ry="4" fill="#1a0e04" opacity="0.7"/>
+  <ellipse cx="295" cy="535" rx="9" ry="5" fill="#1a0e04" opacity="0.6"/>
+  <!-- reflejo del sol en el suelo -->
+  <ellipse cx="240" cy="520" rx="140" ry="18" fill="rgba(200,130,40,0.08)"/>
+  <!-- polvo del amanecer -->
+  <rect x="0" y="0" width="480" height="844" fill="rgba(180,100,20,0.04)"/>
+</svg>

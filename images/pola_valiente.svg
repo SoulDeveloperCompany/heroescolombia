@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <radialGradient id="skin6" cx="45%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#5a3520"/>
+      <stop offset="100%" stop-color="#3d2214"/>
+    </radialGradient>
+    <linearGradient id="dress6" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2a1a0e"/>
+      <stop offset="100%" stop-color="#140c04"/>
+    </linearGradient>
+    <radialGradient id="aura6" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#d4943a" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#a05010" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <!-- Aura heroica dorada -->
+  <ellipse cx="130" cy="180" rx="130" ry="180" fill="url(#aura6)"/>
+  <!-- Falda (postura erguida, desafiante) -->
+  <path d="M 58 168 Q 28 232 18 380 L 242 380 Q 232 232 202 168 Q 164 152 130 152 Q 96 152 58 168 Z" fill="url(#dress6)"/>
+  <path d="M 82 188 Q 71 272 60 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <path d="M 130 157 Q 129 272 128 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <path d="M 178 188 Q 189 272 200 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Corpiño -->
+  <path d="M 80 118 Q 73 153 58 168 Q 96 152 130 152 Q 164 152 202 168 Q 187 153 180 118 Q 160 96 130 94 Q 100 96 80 118 Z" fill="#1e1208"/>
+  <!-- Chal -->
+  <path d="M 73 108 Q 48 140 42 192 Q 55 176 68 165 Q 73 135 83 118 Z" fill="#2a1a0e" opacity="0.8"/>
+  <path d="M 187 108 Q 212 140 218 192 Q 205 176 192 165 Q 187 135 177 118 Z" fill="#2a1a0e" opacity="0.8"/>
+  <!-- Cuello -->
+  <path d="M 108 94 Q 130 106 152 94 L 148 86 Q 130 97 112 86 Z" fill="#2a1a0e"/>
+  <!-- Cabeza (completamente erguida, desafiante) -->
+  <ellipse cx="130" cy="65" rx="32" ry="37" fill="url(#skin6)"/>
+  <!-- Tocado / cabello (con más volumen, heroico) -->
+  <path d="M 98 50 Q 104 28 130 24 Q 156 28 162 50 Q 155 38 130 36 Q 105 38 98 50 Z" fill="#1a1008"/>
+  <!-- Mechón dramático -->
+  <path d="M 96 54 Q 88 40 90 28 Q 94 38 96 54 Z" fill="#1a1008"/>
+  <path d="M 164 54 Q 172 40 170 28 Q 166 38 164 54 Z" fill="#1a1008"/>
+  <path d="M 94 57 Q 90 50 88 62 Q 94 52 96 60 Z" fill="#1a1008"/>
+  <path d="M 166 57 Q 170 50 172 62 Q 166 52 164 60 Z" fill="#1a1008"/>
+  <!-- Cejas (firmes, desafiantes) -->
+  <path d="M 106 56 Q 115 52 123 55" stroke="#1a0e06" stroke-width="2.5" fill="none"/>
+  <path d="M 137 55 Q 145 52 154 56" stroke="#1a0e06" stroke-width="2.5" fill="none"/>
+  <!-- Ojos (mirando directo, con fuego) -->
+  <ellipse cx="116" cy="67" rx="6.5" ry="5" fill="#1a0e06"/>
+  <ellipse cx="144" cy="67" rx="6.5" ry="5" fill="#1a0e06"/>
+  <circle cx="116" cy="66" r="2.5" fill="#4a3020"/>
+  <circle cx="144" cy="66" r="2.5" fill="#4a3020"/>
+  <!-- Destellos en ojos (valentía) -->
+  <circle cx="118" cy="64.5" r="1.2" fill="#d4943a" opacity="0.7"/>
+  <circle cx="146" cy="64.5" r="1.2" fill="#d4943a" opacity="0.7"/>
+  <!-- Nariz -->
+  <path d="M 126 77 Q 130 82 134 77" stroke="#2a1508" stroke-width="1.2" fill="none"/>
+  <!-- Boca (firme, ligeramente abierta, hablando con valentía) -->
+  <path d="M 118 88 Q 124 93 130 90 Q 136 93 142 88" stroke="#3d2214" stroke-width="2" fill="none"/>
+  <path d="M 122 89 Q 130 94 138 89 Q 130 96 122 89 Z" fill="#2a1208" opacity="0.5"/>
+  <!-- Brazo levantado (gesto de discurso / desafío) -->
+  <!-- Brazo derecho levantado -->
+  <path d="M 185 128 Q 205 100 212 72 Q 202 68 196 94 Q 188 118 178 126 Z" fill="url(#skin6)"/>
+  <!-- Mano derecha levantada (puño / gesto) -->
+  <ellipse cx="212" cy="68" rx="11" ry="10" fill="url(#skin6)"/>
+  <!-- Dedos del puño -->
+  <rect x="205" y="58" width="6" height="10" fill="url(#skin6)" rx="2"/>
+  <rect x="213" y="56" width="6" height="12" fill="url(#skin6)" rx="2"/>
+  <rect x="207" y="55" width="6" height="11" fill="url(#skin6)" rx="2"/>
+  <!-- Brazo izquierdo colgando, firme -->
+  <path d="M 75 130 Q 60 152 56 174 Q 65 177 70 156 Q 77 141 83 124 Z" fill="url(#skin6)"/>
+  <ellipse cx="57" cy="177" rx="9" ry="8" fill="url(#skin6)"/>
+  <!-- Halo de luz sutil alrededor de la figura -->
+  <ellipse cx="130" cy="200" rx="115" ry="185" fill="none" stroke="#d4943a" stroke-width="1.5" opacity="0.12"/>
+</svg>

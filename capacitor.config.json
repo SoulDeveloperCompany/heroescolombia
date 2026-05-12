@@ -1,0 +1,11 @@
+{
+  "appId": "com.heroescolombia.game",
+  "appName": "Héroes de Colombia",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

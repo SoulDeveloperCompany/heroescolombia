@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="mercadoSky" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#2a1a0a"/>
+      <stop offset="100%" stop-color="#0d0a07"/>
+    </radialGradient>
+    <radialGradient id="marketLight" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#c8780a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#mercadoSky)"/>
+  <!-- Arcos coloniales fondo -->
+  <g fill="#180e06" opacity="0.95">
+    <!-- Arco central -->
+    <rect x="160" y="260" width="160" height="320"/>
+    <ellipse cx="240" cy="260" rx="80" ry="40"/>
+    <!-- Pilar izq -->
+    <rect x="120" y="300" width="40" height="280"/>
+    <!-- Pilar der -->
+    <rect x="320" y="300" width="40" height="280"/>
+    <!-- Arco izq -->
+    <rect x="55" y="340" width="65" height="240"/>
+    <ellipse cx="87" cy="340" rx="32" ry="18"/>
+    <rect x="20" y="360" width="35" height="220"/>
+    <!-- Arco der -->
+    <rect x="360" y="340" width="65" height="240"/>
+    <ellipse cx="393" cy="340" rx="32" ry="18"/>
+    <rect x="425" y="360" width="35" height="220"/>
+    <!-- Suelo empedrado -->
+    <rect x="0" y="580" width="480" height="264"/>
+  </g>
+  <!-- Líneas empedrado -->
+  <g stroke="#2a1a0a" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="600" x2="480" y2="600"/>
+    <line x1="0" y1="620" x2="480" y2="620"/>
+    <line x1="0" y1="640" x2="480" y2="640"/>
+    <line x1="0" y1="660" x2="480" y2="660"/>
+    <line x1="60" y1="580" x2="80" y2="844"/>
+    <line x1="120" y1="580" x2="150" y2="844"/>
+    <line x1="180" y1="580" x2="220" y2="844"/>
+    <line x1="240" y1="580" x2="240" y2="844"/>
+    <line x1="300" y1="580" x2="260" y2="844"/>
+    <line x1="360" y1="580" x2="330" y2="844"/>
+    <line x1="420" y1="580" x2="400" y2="844"/>
+  </g>
+  <!-- Luz antorcha -->
+  <rect width="480" height="844" fill="url(#marketLight)"/>
+  <!-- Siluetas gente mercado -->
+  <g fill="#0d0a07" opacity="0.7">
+    <ellipse cx="80" cy="545" rx="12" ry="16"/>
+    <rect x="72" y="561" width="16" height="45"/>
+    <ellipse cx="380" cy="540" rx="12" ry="15"/>
+    <rect x="372" y="555" width="16" height="48"/>
+    <ellipse cx="420" cy="548" rx="10" ry="14"/>
+    <rect x="413" y="562" width="14" height="40"/>
+  </g>
+</svg>

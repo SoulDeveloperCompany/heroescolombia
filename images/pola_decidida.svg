@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <radialGradient id="skin4" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#5a3520"/>
+      <stop offset="100%" stop-color="#3d2214"/>
+    </radialGradient>
+    <linearGradient id="dress4" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2a1a0e"/>
+      <stop offset="100%" stop-color="#140c04"/>
+    </linearGradient>
+    <radialGradient id="aura4" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d4943a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <!-- Aura dorada determinación -->
+  <ellipse cx="130" cy="200" rx="120" ry="160" fill="url(#aura4)"/>
+  <!-- Falda (postura erguida) -->
+  <path d="M 62 172 Q 35 235 25 380 L 235 380 Q 225 235 198 172 Q 162 157 130 157 Q 98 157 62 172 Z" fill="url(#dress4)"/>
+  <path d="M 87 192 Q 78 275 67 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <path d="M 130 163 Q 129 275 127 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <path d="M 173 192 Q 182 275 193 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Corpiño erguido -->
+  <path d="M 82 123 Q 76 158 62 172 Q 98 157 130 157 Q 162 157 198 172 Q 184 158 178 123 Q 158 102 130 100 Q 102 100 82 123 Z" fill="#1e1208"/>
+  <!-- Chal -->
+  <path d="M 76 112 Q 52 144 47 194 Q 59 178 72 168 Q 76 138 86 122 Z" fill="#2a1a0e" opacity="0.8"/>
+  <path d="M 184 112 Q 208 144 213 194 Q 201 178 188 168 Q 184 138 174 122 Z" fill="#2a1a0e" opacity="0.8"/>
+  <!-- Cuello -->
+  <path d="M 108 100 Q 130 112 152 100 L 148 92 Q 130 102 112 92 Z" fill="#2a1a0e"/>
+  <!-- Cabeza (erguida, decidida) -->
+  <ellipse cx="130" cy="70" rx="32" ry="37" fill="url(#skin4)"/>
+  <!-- Tocado -->
+  <path d="M 98 55 Q 102 35 130 31 Q 158 35 162 55 Q 154 44 130 42 Q 106 44 98 55 Z" fill="#1a1008"/>
+  <path d="M 95 58 Q 91 51 89 63 Q 95 53 98 61 Z" fill="#1a1008"/>
+  <path d="M 165 58 Q 169 51 171 63 Q 165 53 162 61 Z" fill="#1a1008"/>
+  <!-- Cejas firmes (determinación) -->
+  <path d="M 107 61 Q 116 59 123 61" stroke="#1a0e06" stroke-width="2.5" fill="none"/>
+  <path d="M 137 61 Q 144 59 153 61" stroke="#1a0e06" stroke-width="2.5" fill="none"/>
+  <!-- Ojos (mirando al frente, fijos, seguros) -->
+  <ellipse cx="116" cy="72" rx="6" ry="4.5" fill="#1a0e06"/>
+  <ellipse cx="144" cy="72" rx="6" ry="4.5" fill="#1a0e06"/>
+  <circle cx="116" cy="71" r="2" fill="#4a3020"/>
+  <circle cx="144" cy="71" r="2" fill="#4a3020"/>
+  <!-- Punto de luz en ojo -->
+  <circle cx="118" cy="70" r="0.8" fill="#c8a060" opacity="0.6"/>
+  <circle cx="146" cy="70" r="0.8" fill="#c8a060" opacity="0.6"/>
+  <!-- Nariz -->
+  <path d="M 126 82 Q 130 87 134 82" stroke="#2a1508" stroke-width="1" fill="none"/>
+  <!-- Boca (firme, cerrada, determinada) -->
+  <path d="M 119 93 Q 130 94 141 93" stroke="#3d2214" stroke-width="2" fill="none"/>
+  <!-- Brazos: postura segura (brazos abajo pero firmes) -->
+  <path d="M 190 135 Q 205 155 208 178 Q 199 180 195 158 Q 187 143 180 128 Z" fill="url(#skin4)"/>
+  <path d="M 70 135 Q 55 155 52 178 Q 61 180 65 158 Q 73 143 80 128 Z" fill="url(#skin4)"/>
+  <!-- Manos (puños suaves, dignidad) -->
+  <ellipse cx="207" cy="181" rx="9" ry="8" fill="url(#skin4)"/>
+  <ellipse cx="53" cy="181" rx="9" ry="8" fill="url(#skin4)"/>
+</svg>

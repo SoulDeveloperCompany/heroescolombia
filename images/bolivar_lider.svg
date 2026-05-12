@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" width="260" height="380">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="80%" r="60%"><stop offset="0%" stop-color="#2a1a06"/><stop offset="100%" stop-color="#0d0a07"/></radialGradient>
+    <radialGradient id="skin" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#8a5830"/><stop offset="100%" stop-color="#5a3018"/></radialGradient>
+  </defs>
+  <rect width="260" height="380" fill="url(#bg)"/>
+  <!-- cuerpo — uniforme militar verde oscuro -->
+  <path d="M80 380 L90 220 Q130 200 170 220 L180 380Z" fill="#1a2c18"/>
+  <!-- charreteras doradas -->
+  <ellipse cx="93" cy="222" rx="16" ry="8" fill="#c0900a" opacity="0.9"/>
+  <ellipse cx="167" cy="222" rx="16" ry="8" fill="#c0900a" opacity="0.9"/>
+  <!-- cuello / camisa blanca -->
+  <path d="M110 225 Q130 218 150 225 L148 240 Q130 248 112 240Z" fill="#e8dcc0"/>
+  <!-- cabeza -->
+  <ellipse cx="130" cy="178" rx="32" ry="38" fill="url(#skin)"/>
+  <!-- pelo negro -->
+  <path d="M98 168 Q130 148 162 168 Q162 155 130 150 Q98 155 98 168Z" fill="#1a0f06"/>
+  <!-- sombrero de campaña (bicornio) -->
+  <path d="M88 168 Q130 142 172 168 L178 158 Q130 130 82 158Z" fill="#1a2818"/>
+  <path d="M82 158 L88 168" stroke="#c0900a" stroke-width="1.5" fill="none"/>
+  <path d="M172 168 L178 158" stroke="#c0900a" stroke-width="1.5" fill="none"/>
+  <!-- ojos -->
+  <ellipse cx="116" cy="180" rx="5" ry="6" fill="#1a0f06"/>
+  <ellipse cx="144" cy="180" rx="5" ry="6" fill="#1a0f06"/>
+  <circle cx="115" cy="178" r="1.5" fill="#fff" opacity="0.6"/>
+  <circle cx="143" cy="178" r="1.5" fill="#fff" opacity="0.6"/>
+  <!-- nariz -->
+  <path d="M128 186 Q130 195 132 186" stroke="#4a2010" stroke-width="1.2" fill="none"/>
+  <!-- boca firme -->
+  <path d="M120 198 Q130 202 140 198" stroke="#6a3518" stroke-width="1.5" fill="none"/>
+  <!-- espada en la cadera -->
+  <rect x="155" y="270" width="5" height="90" rx="2" fill="#8a7020" transform="rotate(-8 155 270)"/>
+  <rect x="150" y="268" width="15" height="6" rx="2" fill="#c0900a" transform="rotate(-8 155 270)"/>
+  <!-- capa dorada al hombro -->
+  <path d="M160 222 Q185 240 180 310 L170 310 Q175 250 155 232Z" fill="#8a7010" opacity="0.7"/>
+  <!-- detalles del uniforme: botonadura -->
+  <circle cx="130" cy="250" r="3" fill="#c0900a"/>
+  <circle cx="130" cy="268" r="3" fill="#c0900a"/>
+  <circle cx="130" cy="286" r="3" fill="#c0900a"/>
+  <!-- glow heroico -->
+  <ellipse cx="130" cy="200" rx="60" ry="80" fill="rgba(212,148,58,0.04)"/>
+</svg>

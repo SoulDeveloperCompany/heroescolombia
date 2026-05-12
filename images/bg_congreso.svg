@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" width="480" height="844">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0e1a"/><stop offset="100%" stop-color="#0e1220"/></linearGradient>
+    <radialGradient id="lampara" cx="50%" cy="30%" r="40%"><stop offset="0%" stop-color="#d4a030" stop-opacity="0.3"/><stop offset="100%" stop-color="#d4a030" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#cielo)"/>
+  <!-- salón del congreso colonial -->
+  <!-- paredes laterales -->
+  <rect x="0"   y="0" width="70"  height="844" fill="#0e0c08"/>
+  <rect x="410" y="0" width="70"  height="844" fill="#0e0c08"/>
+  <!-- columnas clásicas izquierda -->
+  <rect x="60"  y="80"  width="24" height="500" rx="8" fill="#1e1a10"/>
+  <rect x="110" y="100" width="20" height="480" rx="6" fill="#1a1610"/>
+  <!-- columnas clásicas derecha -->
+  <rect x="396" y="80"  width="24" height="500" rx="8" fill="#1e1a10"/>
+  <rect x="350" y="100" width="20" height="480" rx="6" fill="#1a1610"/>
+  <!-- capitel columnas -->
+  <rect x="56"  y="76"  width="32" height="10" rx="3" fill="#2a2418"/>
+  <rect x="106" y="96"  width="28" height="8"  rx="3" fill="#2a2418"/>
+  <rect x="392" y="76"  width="32" height="10" rx="3" fill="#2a2418"/>
+  <rect x="346" y="96"  width="28" height="8"  rx="3" fill="#2a2418"/>
+  <!-- friso/techo del salón -->
+  <rect x="0" y="60" width="480" height="30" fill="#1a1608"/>
+  <rect x="60" y="55" width="360" height="12" fill="#241e10"/>
+  <!-- techo con decoración -->
+  <path d="M60 55 L240 30 L420 55" fill="#1a1608"/>
+  <!-- lámpara de araña -->
+  <circle cx="240" cy="120" r="50" fill="url(#lampara)"/>
+  <circle cx="240" cy="100" r="5" fill="#d4a030" opacity="0.8"/>
+  <!-- velas de la araña -->
+  <line x1="240" y1="105" x2="220" y2="125" stroke="#d4a030" stroke-width="1" opacity="0.5"/>
+  <line x1="240" y1="105" x2="260" y2="125" stroke="#d4a030" stroke-width="1" opacity="0.5"/>
+  <line x1="240" y1="105" x2="240" y2="130" stroke="#d4a030" stroke-width="1" opacity="0.5"/>
+  <line x1="240" y1="105" x2="215" y2="115" stroke="#d4a030" stroke-width="1" opacity="0.4"/>
+  <line x1="240" y1="105" x2="265" y2="115" stroke="#d4a030" stroke-width="1" opacity="0.4"/>
+  <!-- mesa del congreso -->
+  <rect x="90" y="540" width="300" height="30" rx="6" fill="#3a2810"/>
+  <rect x="80" y="570" width="320" height="20" rx="4" fill="#2a1e0c"/>
+  <!-- sillas del congreso (siluetas) -->
+  <rect x="100" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="135" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="170" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="205" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="240" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="275" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="310" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <rect x="345" y="510" width="25" height="35" rx="3" fill="#1e1408"/>
+  <!-- bandera de Colombia al fondo -->
+  <rect x="210" y="380" width="5" height="130" fill="#3a2810"/>
+  <rect x="215" y="380" width="60" height="20" fill="#f0c020" opacity="0.8"/>
+  <rect x="215" y="400" width="60" height="13" fill="#1030c0" opacity="0.7"/>
+  <rect x="215" y="413" width="60" height="13" fill="#c02020" opacity="0.7"/>
+  <!-- ventanas altas -->
+  <rect x="140" y="130" width="50" height="140" rx="25 25 0 0" fill="rgba(30,40,60,0.5)"/>
+  <rect x="290" y="130" width="50" height="140" rx="25 25 0 0" fill="rgba(30,40,60,0.5)"/>
+  <!-- luz de luna por las ventanas -->
+  <ellipse cx="165" cy="180" rx="22" ry="60" fill="rgba(100,120,180,0.06)"/>
+  <ellipse cx="315" cy="180" rx="22" ry="60" fill="rgba(100,120,180,0.06)"/>
+  <!-- atmósfera azulada republicana -->
+  <rect x="0" y="0" width="480" height="844" fill="rgba(10,20,50,0.08)"/>
+</svg>

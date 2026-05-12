@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="candleGlow" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#a05010" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#4a1a08" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="nightWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080604"/>
+      <stop offset="100%" stop-color="#0d0a07"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#nightWall)"/>
+  <!-- Ventana pequeña con luna -->
+  <rect x="300" y="80" width="110" height="150" fill="#0a0f1a" rx="4"/>
+  <rect x="304" y="84" width="48" height="142" fill="#0c1220" opacity="0.9"/>
+  <rect x="356" y="84" width="50" height="142" fill="#0c1220" opacity="0.9"/>
+  <!-- Luna -->
+  <circle cx="390" cy="130" r="22" fill="#e8d8c0" opacity="0.18"/>
+  <circle cx="380" cy="125" r="22" fill="#080f1a" opacity="0.6"/>
+  <!-- Estrellas -->
+  <g fill="#d0c8b0" opacity="0.25">
+    <circle cx="310" cy="95" r="1.5"/>
+    <circle cx="330" cy="108" r="1"/>
+    <circle cx="355" cy="92" r="1.5"/>
+    <circle cx="370" cy="115" r="1"/>
+    <circle cx="410" cy="90" r="1.5"/>
+    <circle cx="435" cy="105" r="1"/>
+  </g>
+  <!-- Marco ventana -->
+  <rect x="296" y="76" width="118" height="8" fill="#1a0d06"/>
+  <rect x="296" y="76" width="8" height="160" fill="#1a0d06"/>
+  <rect x="406" y="76" width="8" height="160" fill="#1a0d06"/>
+  <rect x="296" y="228" width="118" height="8" fill="#1a0d06"/>
+  <rect x="348" y="76" width="8" height="160" fill="#1a0d06"/>
+  <!-- Mesa con vela -->
+  <rect x="60" y="500" width="200" height="10" fill="#2a1508" rx="2"/>
+  <rect x="80" y="510" width="20" height="80" fill="#1a0d06"/>
+  <rect x="180" y="510" width="20" height="80" fill="#1a0d06"/>
+  <!-- Vela encendida -->
+  <rect x="148" y="455" width="10" height="48" fill="#f5ecd7" opacity="0.85"/>
+  <ellipse cx="153" cy="450" rx="5" ry="10" fill="#f5a020" opacity="0.95"/>
+  <ellipse cx="153" cy="448" rx="2" ry="5" fill="#fff0a0" opacity="0.7"/>
+  <!-- Costura en mesa -->
+  <ellipse cx="130" cy="500" rx="25" ry="8" fill="#3a2010" opacity="0.6"/>
+  <!-- Luz vela -->
+  <rect width="480" height="844" fill="url(#candleGlow)"/>
+  <!-- Sombras profundas -->
+  <rect x="0" y="0" width="60" height="844" fill="#050403" opacity="0.7"/>
+  <rect x="420" y="0" width="60" height="844" fill="#050403" opacity="0.7"/>
+  <rect x="0" y="0" width="480" height="80" fill="#050403" opacity="0.8"/>
+</svg>

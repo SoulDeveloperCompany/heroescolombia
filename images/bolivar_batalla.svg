@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" width="260" height="380">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="80%" r="60%"><stop offset="0%" stop-color="#2a0a06"/><stop offset="100%" stop-color="#0d0604"/></radialGradient>
+    <radialGradient id="skin" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#8a5830"/><stop offset="100%" stop-color="#5a3018"/></radialGradient>
+  </defs>
+  <rect width="260" height="380" fill="url(#bg)"/>
+  <!-- cuerpo en postura de ataque -->
+  <path d="M70 380 L85 210 Q130 195 175 210 L190 380Z" fill="#1a2c18"/>
+  <!-- charreteras -->
+  <ellipse cx="88" cy="212" rx="16" ry="8" fill="#c0900a" opacity="0.9"/>
+  <ellipse cx="172" cy="212" rx="16" ry="8" fill="#c0900a" opacity="0.9"/>
+  <!-- camisa -->
+  <path d="M108 218 Q130 210 152 218 L150 232 Q130 240 110 232Z" fill="#e8dcc0"/>
+  <!-- brazo derecho extendido con espada -->
+  <rect x="168" y="215" width="12" height="80" rx="5" fill="#2a3c28" transform="rotate(35 168 215)"/>
+  <!-- espada -->
+  <rect x="202" y="170" width="4" height="100" rx="2" fill="#c0c0c0" transform="rotate(35 168 215)"/>
+  <path d="M196 155 L208 145 L215 160Z" fill="#c0c0c0" transform="rotate(35 168 215)"/>
+  <!-- guardia de la espada -->
+  <rect x="195" y="190" width="20" height="5" rx="2" fill="#c0900a" transform="rotate(35 168 215)"/>
+  <!-- cabeza inclinada hacia adelante -->
+  <ellipse cx="128" cy="172" rx="30" ry="36" fill="url(#skin)"/>
+  <!-- pelo -->
+  <path d="M98 162 Q128 142 158 162 L158 150 Q128 138 98 150Z" fill="#1a0f06"/>
+  <!-- bicornio -->
+  <path d="M86 162 Q128 136 170 162 L176 152 Q128 122 82 152Z" fill="#1a2818"/>
+  <line x1="82" y1="152" x2="86" y2="162" stroke="#c0900a" stroke-width="1.5"/>
+  <line x1="170" y1="162" x2="176" y2="152" stroke="#c0900a" stroke-width="1.5"/>
+  <!-- expresión intensa -->
+  <ellipse cx="114" cy="175" rx="5" ry="6" fill="#1a0f06"/>
+  <ellipse cx="142" cy="175" rx="5" ry="6" fill="#1a0f06"/>
+  <circle cx="113" cy="173" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="141" cy="173" r="1.5" fill="#fff" opacity="0.5"/>
+  <path d="M109 168 L119 165" stroke="#3a1a06" stroke-width="1.5"/>
+  <path d="M139 165 L149 168" stroke="#3a1a06" stroke-width="1.5"/>
+  <path d="M118 196 Q128 200 138 196" stroke="#5a2a10" stroke-width="1.5" fill="none"/>
+  <!-- capa en movimiento -->
+  <path d="M90 215 Q50 260 60 340 L80 335 Q72 265 100 225Z" fill="#8a2010" opacity="0.85"/>
+  <!-- destello de batalla -->
+  <ellipse cx="130" cy="190" rx="70" ry="90" fill="rgba(200,80,20,0.06)"/>
+</svg>

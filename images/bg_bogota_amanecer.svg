@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#3d2010"/>
+      <stop offset="40%" stop-color="#1f1008"/>
+      <stop offset="100%" stop-color="#0a0604"/>
+    </radialGradient>
+    <radialGradient id="dawn" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#c8640a" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#7a3a08" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <!-- Cielo amanecer -->
+  <rect width="480" height="844" fill="url(#sky)"/>
+  <rect width="480" height="844" fill="url(#dawn)"/>
+  <!-- Silueta catedral -->
+  <g fill="#0d0704" opacity="0.9">
+    <!-- Torre izquierda catedral -->
+    <rect x="80" y="340" width="40" height="220"/>
+    <polygon points="80,340 100,290 120,340"/>
+    <rect x="88" y="300" width="8" height="14"/>
+    <rect x="104" y="300" width="8" height="14"/>
+    <!-- Cruz -->
+    <rect x="97" y="275" width="6" height="20"/>
+    <rect x="91" y="279" width="18" height="5"/>
+    <!-- Cuerpo central catedral -->
+    <rect x="120" y="390" width="120" height="170"/>
+    <polygon points="120,390 180,340 240,390"/>
+    <!-- Ventana rosetón -->
+    <circle cx="180" cy="380" r="16" fill="#1a0d06"/>
+    <circle cx="180" cy="380" r="10" fill="#0a0604"/>
+    <!-- Torre derecha -->
+    <rect x="240" y="355" width="35" height="205"/>
+    <polygon points="240,355 257,308 275,355"/>
+    <rect x="247" y="318" width="7" height="12"/>
+    <rect x="261" y="318" width="7" height="12"/>
+    <rect x="254" y="294" width="5" height="18"/>
+    <rect x="249" y="298" width="15" height="4"/>
+    <!-- Casas coloniales derecha -->
+    <rect x="290" y="450" width="55" height="140"/>
+    <polygon points="290,450 317,420 345,450"/>
+    <rect x="320" y="480" width="14" height="22"/>
+    <!-- Casas izquierda -->
+    <rect x="10" y="480" width="65" height="120"/>
+    <polygon points="10,480 42,452 75,480"/>
+    <rect x="30" y="505" width="12" height="20"/>
+    <rect x="50" y="505" width="12" height="20"/>
+  </g>
+  <!-- Neblina de mañana -->
+  <rect x="0" y="540" width="480" height="304" fill="#0d0704" opacity="0.6"/>
+  <ellipse cx="240" cy="560" rx="280" ry="60" fill="#1a0d06" opacity="0.4"/>
+  <!-- Luz cálida inferior -->
+  <radialGradient id="groundLight" cx="50%" cy="100%" r="50%">
+    <stop offset="0%" stop-color="#7a3a08" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <rect width="480" height="844" fill="url(#groundLight)"/>
+  <!-- Textura papel -->
+  <rect width="480" height="844" fill="url(#dawn)" opacity="0.15"/>
+</svg>

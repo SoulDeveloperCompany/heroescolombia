@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" width="260" height="380">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="80%" r="60%"><stop offset="0%" stop-color="#220e04"/><stop offset="100%" stop-color="#0d0804"/></radialGradient>
+    <radialGradient id="skin" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#9a6840"/><stop offset="100%" stop-color="#6a3820"/></radialGradient>
+  </defs>
+  <rect width="260" height="380" fill="url(#bg)"/>
+  <!-- falda colonial amplia -->
+  <path d="M60 380 Q90 300 130 290 Q170 300 200 380Z" fill="#3a2010"/>
+  <!-- cuerpo — blusa colonial -->
+  <path d="M90 295 L94 215 Q130 200 166 215 L170 295 Q130 305 90 295Z" fill="#c8b890"/>
+  <!-- delantal -->
+  <path d="M100 295 L102 235 Q130 228 158 235 L160 295 Q130 302 100 295Z" fill="#e8d8b0" opacity="0.7"/>
+  <!-- brazo derecho extendido sosteniendo papel arrancado -->
+  <rect x="160" y="215" width="14" height="55" rx="6" fill="#c8b890" transform="rotate(-25 160 215)"/>
+  <!-- trozo de edicto arrancado en la mano -->
+  <path d="M182 195 L220 188 L224 225 L186 230Z" fill="#f0e4c0" transform="rotate(-5 200 210)"/>
+  <path d="M186 198 L216 193" stroke="#5a3010" stroke-width="0.8" opacity="0.5" transform="rotate(-5 200 210)"/>
+  <path d="M186 206 L216 201" stroke="#5a3010" stroke-width="0.8" opacity="0.5" transform="rotate(-5 200 210)"/>
+  <!-- borde rasgado del papel -->
+  <path d="M186 230 Q190 224 194 228 Q198 222 202 226 Q206 220 210 224 L224 225Z" fill="#f0e4c0" transform="rotate(-5 200 210)"/>
+  <!-- brazo izquierdo en jarra -->
+  <rect x="82" y="215" width="14" height="60" rx="6" fill="#c8b890" transform="rotate(15 82 215)"/>
+  <!-- cabeza con pañuelo colonial -->
+  <ellipse cx="130" cy="178" rx="30" ry="36" fill="url(#skin)"/>
+  <!-- pañuelo en la cabeza -->
+  <path d="M100 170 Q130 152 160 170 Q155 155 130 148 Q105 155 100 170Z" fill="#8a5030"/>
+  <path d="M100 170 L94 185" stroke="#8a5030" stroke-width="5" stroke-linecap="round"/>
+  <path d="M160 170 L162 182" stroke="#8a5030" stroke-width="3" stroke-linecap="round"/>
+  <!-- pelo oscuro -->
+  <path d="M100 170 Q95 185 97 198" stroke="#2a1406" stroke-width="3" fill="none"/>
+  <!-- expresión desafiante -->
+  <ellipse cx="116" cy="180" rx="5" ry="5.5" fill="#1a0e06"/>
+  <ellipse cx="144" cy="180" rx="5" ry="5.5" fill="#1a0e06"/>
+  <circle cx="115" cy="178" r="1.5" fill="#fff" opacity="0.7"/>
+  <circle cx="143" cy="178" r="1.5" fill="#fff" opacity="0.7"/>
+  <!-- cejas enérgicas -->
+  <path d="M109 172 Q116 168 123 172" stroke="#2a1006" stroke-width="1.8" fill="none"/>
+  <path d="M137 172 Q144 168 151 172" stroke="#2a1006" stroke-width="1.8" fill="none"/>
+  <path d="M120 198 Q130 202 140 198" stroke="#6a3020" stroke-width="1.5" fill="none"/>
+  <!-- aura de fuego revolucionario -->
+  <ellipse cx="130" cy="200" rx="65" ry="80" fill="rgba(200,80,10,0.05)"/>
+</svg>

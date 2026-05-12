@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" width="480" height="844">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1206"/><stop offset="50%" stop-color="#2a1808"/><stop offset="100%" stop-color="#200e04"/></linearGradient>
+    <linearGradient id="suelo" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e1408"/><stop offset="100%" stop-color="#100a04"/></linearGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#sky)"/>
+  <!-- iglesia colonial de El Socorro al fondo -->
+  <!-- campanario -->
+  <rect x="190" y="100" width="100" height="200" fill="#2a1e10"/>
+  <path d="M188 100 L240 60 L292 100Z" fill="#1a140a"/>
+  <rect x="210" y="130" width="60" height="80" rx="30" fill="#0a0806"/>
+  <!-- cuerpo de la iglesia -->
+  <rect x="100" y="260" width="280" height="220" fill="#2a1e10"/>
+  <path d="M98 260 L240 200 L382 260Z" fill="#1e160c"/>
+  <!-- puerta de la iglesia -->
+  <rect x="200" y="380" width="80" height="100" rx="40 40 0 0" fill="#0a0806"/>
+  <!-- ventanas -->
+  <rect x="120" y="300" width="40" height="60" rx="20 20 0 0" fill="#0a0806"/>
+  <rect x="320" y="300" width="40" height="60" rx="20 20 0 0" fill="#0a0806"/>
+  <!-- plaza empedrada -->
+  <rect x="0" y="480" width="480" height="364" fill="url(#suelo)"/>
+  <!-- empedrado colonial -->
+  <path d="M0 480 Q80 478 160 482 Q240 478 320 482 Q400 478 480 480" stroke="rgba(60,40,20,0.3)" stroke-width="2" fill="none"/>
+  <path d="M0 500 Q80 498 160 502 Q240 498 320 502 Q400 498 480 500" stroke="rgba(60,40,20,0.2)" stroke-width="1.5" fill="none"/>
+  <!-- edicto real en la pared del cabildo -->
+  <rect x="340" y="380" width="70" height="95" rx="2" fill="#1a1408"/>
+  <rect x="345" y="355" width="60" height="90" rx="2" fill="#f0e4c0" opacity="0.8"/>
+  <line x1="352" y1="368" x2="396" y2="368" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <line x1="352" y1="376" x2="396" y2="376" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <line x1="352" y1="384" x2="396" y2="384" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <line x1="352" y1="392" x2="380" y2="392" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <!-- sello real en el papel -->
+  <circle cx="380" cy="410" r="10" fill="none" stroke="#c04020" stroke-width="1.2" opacity="0.7"/>
+  <!-- cabildo / edificio colonial izquierdo -->
+  <rect x="0" y="320" width="120" height="200" fill="#241a0c"/>
+  <rect x="0" y="300" width="122" height="24" fill="#1a1208"/>
+  <rect x="20" y="340" width="30" height="50" rx="2" fill="#0a0806"/>
+  <rect x="70" y="340" width="30" height="50" rx="2" fill="#0a0806"/>
+  <!-- arco colonial izquierdo -->
+  <path d="M0 520 Q30 500 60 520" stroke="#1a1208" stroke-width="3" fill="none" opacity="0.5"/>
+  <!-- gente en la plaza (siluetas) -->
+  <ellipse cx="200" cy="530" rx="8" ry="14" fill="#150e06" opacity="0.8"/>
+  <ellipse cx="230" cy="535" rx="7" ry="13" fill="#150e06" opacity="0.7"/>
+  <ellipse cx="260" cy="528" rx="8" ry="14" fill="#150e06" opacity="0.8"/>
+  <ellipse cx="170" cy="540" rx="7" ry="12" fill="#150e06" opacity="0.6"/>
+  <!-- ambiente cálido colonial -->
+  <ellipse cx="240" cy="490" rx="200" ry="60" fill="rgba(180,120,40,0.06)"/>
+</svg>

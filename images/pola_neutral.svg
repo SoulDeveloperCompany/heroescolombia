@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <radialGradient id="skin2" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#5a3520"/>
+      <stop offset="100%" stop-color="#3d2214"/>
+    </radialGradient>
+    <linearGradient id="dress2" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2a1a0e"/>
+      <stop offset="100%" stop-color="#140c04"/>
+    </linearGradient>
+    <radialGradient id="aura2" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#c8780a" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="130" cy="320" rx="110" ry="80" fill="url(#aura2)"/>
+  <!-- Falda -->
+  <path d="M 58 175 Q 28 240 18 380 L 242 380 Q 232 240 202 175 Q 166 160 130 160 Q 94 160 58 175 Z" fill="url(#dress2)"/>
+  <path d="M 83 195 Q 73 280 62 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <path d="M 130 170 Q 128 280 126 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <path d="M 177 195 Q 187 280 198 380" stroke="#1a0e06" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Corpiño -->
+  <path d="M 78 125 Q 72 160 58 175 Q 94 160 130 160 Q 166 160 202 175 Q 188 160 182 125 Q 160 105 130 103 Q 100 103 78 125 Z" fill="#1e1208"/>
+  <!-- Chal -->
+  <path d="M 72 115 Q 48 148 43 198 Q 54 182 68 172 Q 72 142 82 125 Z" fill="#2a1a0e" opacity="0.8"/>
+  <path d="M 188 115 Q 212 148 217 198 Q 206 182 192 172 Q 188 142 178 125 Z" fill="#2a1a0e" opacity="0.8"/>
+  <!-- Cuello -->
+  <path d="M 108 103 Q 130 114 152 103 L 148 95 Q 130 104 112 95 Z" fill="#2a1a0e"/>
+  <!-- Cabeza -->
+  <ellipse cx="130" cy="72" rx="32" ry="37" fill="url(#skin2)"/>
+  <!-- Tocado -->
+  <path d="M 98 57 Q 102 37 130 33 Q 158 37 162 57 Q 154 46 130 44 Q 106 46 98 57 Z" fill="#1a1008"/>
+  <path d="M 96 60 Q 92 53 90 65 Q 96 55 98 63 Z" fill="#1a1008"/>
+  <path d="M 164 60 Q 168 53 170 65 Q 164 55 162 63 Z" fill="#1a1008"/>
+  <!-- Ojos (mirando al frente, tranquilos) -->
+  <ellipse cx="116" cy="74" rx="5.5" ry="4" fill="#1a0e06"/>
+  <ellipse cx="144" cy="74" rx="5.5" ry="4" fill="#1a0e06"/>
+  <circle cx="117" cy="73" r="1.5" fill="#3d2a1a"/>
+  <circle cx="145" cy="73" r="1.5" fill="#3d2a1a"/>
+  <!-- Nariz -->
+  <path d="M 126 84 Q 130 89 134 84" stroke="#2a1508" stroke-width="1" fill="none"/>
+  <!-- Boca (leve tensión, seria) -->
+  <path d="M 120 94 Q 130 97 140 94" stroke="#3d2214" stroke-width="1.5" fill="none"/>
+  <!-- Brazos colgando, discretos -->
+  <path d="M 188 138 Q 202 158 206 180 Q 198 182 194 162 Q 185 145 178 132 Z" fill="url(#skin2)"/>
+  <path d="M 72 138 Q 58 158 54 180 Q 62 182 66 162 Q 75 145 82 132 Z" fill="url(#skin2)"/>
+  <!-- Cesta en brazo izquierdo (costurera con encargo) -->
+  <ellipse cx="52" cy="186" rx="16" ry="10" fill="#2a1a08"/>
+  <path d="M 38 186 Q 52 175 66 186" stroke="#3a2010" stroke-width="2" fill="none"/>
+</svg>

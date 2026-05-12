@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" width="480" height="844">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1008"/><stop offset="40%" stop-color="#280e04"/><stop offset="100%" stop-color="#1a0a04"/></linearGradient>
+    <linearGradient id="campo" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1808"/><stop offset="100%" stop-color="#0d0e06"/></linearGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#sky)"/>
+  <!-- humo de batalla -->
+  <ellipse cx="180" cy="300" rx="100" ry="60" fill="rgba(60,40,20,0.25)"/>
+  <ellipse cx="320" cy="280" rx="80" ry="50" fill="rgba(50,30,15,0.2)"/>
+  <ellipse cx="240" cy="240" rx="130" ry="70" fill="rgba(40,25,10,0.18)"/>
+  <!-- colinas de Boyacá -->
+  <path d="M0 480 Q80 440 160 460 Q240 430 320 452 Q400 435 480 458 L480 844 L0 844Z" fill="url(#campo)"/>
+  <!-- río Teatinos (puente) -->
+  <path d="M0 580 Q120 570 240 578 Q360 572 480 580 L480 600 Q360 592 240 598 Q120 590 0 600Z" fill="rgba(30,50,80,0.5)"/>
+  <!-- puente de madera colonial -->
+  <rect x="190" y="565" width="100" height="20" fill="#3a2810" rx="2"/>
+  <rect x="195" y="555" width="6" height="30" fill="#2a1a08"/>
+  <rect x="215" y="555" width="6" height="30" fill="#2a1a08"/>
+  <rect x="235" y="555" width="6" height="30" fill="#2a1a08"/>
+  <rect x="255" y="555" width="6" height="30" fill="#2a1a08"/>
+  <rect x="275" y="555" width="6" height="30" fill="#2a1a08"/>
+  <!-- siluetas de soldados en la lejanía -->
+  <rect x="60"  cy="470" x="60"  y="462" width="4"  height="20" fill="#0d0804" opacity="0.7"/>
+  <rect x="80"  cy="472" x="80"  y="464" width="4"  height="18" fill="#0d0804" opacity="0.6"/>
+  <rect x="100" cy="468" x="100" y="460" width="4"  height="22" fill="#0d0804" opacity="0.7"/>
+  <rect x="380" cy="465" x="380" y="457" width="4"  height="20" fill="#0d0804" opacity="0.6"/>
+  <rect x="400" cy="470" x="400" y="462" width="4"  height="18" fill="#0d0804" opacity="0.7"/>
+  <!-- destellos de pólvora -->
+  <circle cx="140" cy="455" r="6" fill="rgba(255,180,40,0.3)"/>
+  <circle cx="360" cy="448" r="5" fill="rgba(255,180,40,0.25)"/>
+  <!-- campo de batalla — hierba aplastada -->
+  <path d="M0 620 Q240 610 480 620 L480 844 L0 844Z" fill="#141208"/>
+  <!-- tonos épicos -->
+  <rect x="0" y="0" width="480" height="844" fill="rgba(100,30,10,0.07)"/>
+</svg>

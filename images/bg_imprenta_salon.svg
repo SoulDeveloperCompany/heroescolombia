@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" width="480" height="844">
+  <defs>
+    <radialGradient id="luz" cx="50%" cy="60%" r="50%"><stop offset="0%" stop-color="#3a2810"/><stop offset="100%" stop-color="#0a0806"/></radialGradient>
+    <radialGradient id="vela" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.4"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#luz)"/>
+  <!-- paredes de sótano colonial -->
+  <rect x="0"   y="0" width="50"  height="844" fill="rgba(15,10,5,0.7)"/>
+  <rect x="430" y="0" width="50"  height="844" fill="rgba(15,10,5,0.7)"/>
+  <!-- estantes con libros -->
+  <rect x="0"  y="80"  width="50" height="8"  fill="#3a2010"/>
+  <rect x="430" y="80" width="50" height="8"  fill="#3a2010"/>
+  <rect x="0"  y="140" width="50" height="8"  fill="#3a2010"/>
+  <rect x="430" y="140" width="50" height="8"  fill="#3a2010"/>
+  <!-- libros en el estante izquierdo -->
+  <rect x="2"  y="62" width="6"  height="18" fill="#8a2010" rx="1"/>
+  <rect x="10" y="58" width="8"  height="22" fill="#1a3050" rx="1"/>
+  <rect x="20" y="64" width="6"  height="16" fill="#2a5020" rx="1"/>
+  <rect x="28" y="60" width="7"  height="20" fill="#604010" rx="1"/>
+  <rect x="37" y="63" width="6"  height="17" fill="#303820" rx="1"/>
+  <!-- libros estante derecho -->
+  <rect x="432" y="62" width="6"  height="18" fill="#1a3050" rx="1"/>
+  <rect x="440" y="58" width="8"  height="22" fill="#8a2010" rx="1"/>
+  <rect x="450" y="64" width="6"  height="16" fill="#604010" rx="1"/>
+  <rect x="458" y="60" width="7"  height="20" fill="#2a5020" rx="1"/>
+  <!-- imprenta en el centro -->
+  <!-- base de madera -->
+  <rect x="130" y="480" width="220" height="200" rx="6" fill="#3a2010"/>
+  <!-- plataforma de impresión -->
+  <rect x="150" y="440" width="180" height="50" rx="4" fill="#2a1808"/>
+  <!-- tornillo central (husillo) -->
+  <rect x="232" y="350" width="16" height="100" rx="6" fill="#5a3820"/>
+  <!-- brazo de la palanca -->
+  <rect x="180" y="370" width="120" height="10" rx="4" fill="#4a2c14" transform="rotate(-5 240 375)"/>
+  <!-- hoja impresa sobre la plataforma -->
+  <rect x="165" y="442" width="150" height="45" rx="2" fill="#f0e4c0" opacity="0.85"/>
+  <line x1="175" y1="452" x2="305" y2="452" stroke="#3a2010" stroke-width="1" opacity="0.4"/>
+  <line x1="175" y1="460" x2="305" y2="460" stroke="#3a2010" stroke-width="1" opacity="0.4"/>
+  <line x1="175" y1="468" x2="280" y2="468" stroke="#3a2010" stroke-width="1" opacity="0.4"/>
+  <!-- tipos de plomo sobre la mesa -->
+  <rect x="130" y="670" width="220" height="30" rx="3" fill="#2a1808"/>
+  <rect x="140" y="660" width="8" height="15" rx="1" fill="#404040"/>
+  <rect x="152" y="658" width="8" height="17" rx="1" fill="#404040"/>
+  <rect x="164" y="661" width="8" height="14" rx="1" fill="#404040"/>
+  <rect x="176" y="659" width="8" height="16" rx="1" fill="#404040"/>
+  <!-- vela / lámpara de aceite -->
+  <circle cx="90" cy="350" r="45" fill="url(#vela)"/>
+  <rect x="86" y="340" width="8" height="30" rx="3" fill="#c8a040" opacity="0.8"/>
+  <ellipse cx="90" cy="338" rx="5" ry="8" fill="#f0e040" opacity="0.9"/>
+  <!-- sombras dramáticas -->
+  <rect x="50" y="0" width="380" height="844" fill="rgba(0,0,0,0.15)"/>
+  <!-- techo con vigas -->
+  <rect x="0"   y="0" width="480" height="30" fill="#1a0e06"/>
+  <rect x="60"  y="0" width="20"  height="80" fill="#1a0e06"/>
+  <rect x="200" y="0" width="20"  height="70" fill="#1a0e06"/>
+  <rect x="340" y="0" width="20"  height="80" fill="#1a0e06"/>
+</svg>

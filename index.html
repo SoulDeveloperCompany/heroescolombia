@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0d0a07">
+  <title>Héroes de Colombia — La Pola</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="game">
+
+  <!-- ── Fondo de escena ──────────────────────────────────── -->
+  <div id="scene-bg">
+    <img id="bg-image" src="" alt="" aria-hidden="true">
+  </div>
+  <div id="vignette"></div>
+
+  <!-- ── Silueta del personaje ───────────────────────────── -->
+  <div id="character-container">
+    <img id="char-image" src="" alt="Personaje" aria-hidden="true">
+    <div id="character-silhouette"></div>
+  </div>
+
+  <!-- ── HUD superior ────────────────────────────────────── -->
+  <div id="hud">
+    <div id="hud-title">Héroes de Colombia</div>
+    <div id="fidelity-bar" title="Fidelidad histórica"></div>
+    <button id="btn-save">Guardar</button>
+    <button id="btn-menu">≡</button>
+  </div>
+
+  <!-- ── Panel de diálogo ────────────────────────────────── -->
+  <div id="dialogue-panel">
+    <div id="speaker-bar">
+      <div id="speaker-portrait">👤</div>
+      <div>
+        <div id="speaker-name">Policarpa</div>
+        <div id="speaker-role">La Pola</div>
+      </div>
+    </div>
+    <div id="dialogue-text-area">
+      <div id="dialogue-text"></div>
+      <div id="continue-arrow">▼</div>
+    </div>
+  </div>
+
+  <!-- ── Panel de elecciones ─────────────────────────────── -->
+  <div id="choice-panel">
+    <div id="choice-header">
+      <div id="choice-question">¿Qué decides?</div>
+      <div id="choice-context"></div>
+    </div>
+    <div class="choice-divider"></div>
+    <div id="choices-wrap"></div>
+  </div>
+
+  <!-- ── Nota histórica ──────────────────────────────────── -->
+  <div id="note-panel">
+    <div id="note-card">
+      <div id="note-accent"></div>
+      <div id="note-year">Bogotá, 1817</div>
+      <div id="note-title">Nota histórica</div>
+      <div id="note-body"></div>
+      <button id="note-close">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- ── Intro del acto ──────────────────────────────────── -->
+  <div id="act-intro">
+    <div id="act-number">Acto I</div>
+    <div id="act-title">La Costurera de Bogotá</div>
+    <div id="act-separator"></div>
+    <div id="act-historical"></div>
+    <button id="act-continue">Comenzar</button>
+  </div>
+
+  <!-- ── Pantalla de ending ──────────────────────────────── -->
+  <div id="ending-screen">
+    <div id="ending-type"></div>
+    <div id="ending-title"></div>
+    <div id="ending-body"></div>
+    <blockquote id="ending-quote"></blockquote>
+    <button id="ending-restart">Volver al inicio</button>
+  </div>
+
+  <!-- ── Menú principal ──────────────────────────────────── -->
+  <div id="main-menu">
+    <div id="menu-ornament">✦ ✦ ✦</div>
+    <div id="menu-title">Héroes de Colombia</div>
+    <div id="menu-subtitle">5 héroes · 25 finales</div>
+    <button id="menu-play"     class="menu-btn primary">Elegir Historia</button>
+    <button id="menu-continue" class="menu-btn" style="display:none">Continuar partida</button>
+    <div id="menu-secondary-btns">
+      <button id="menu-heroes" class="menu-btn-sec">
+        <span class="menu-btn-sec-icon">⚔</span>Héroes
+      </button>
+      <button id="menu-minigames" class="menu-btn-sec">
+        <span class="menu-btn-sec-icon">🎮</span>Minijuegos
+      </button>
+      <button id="menu-logros" class="menu-btn-sec">
+        <span class="menu-btn-sec-icon">🏅</span>Logros
+      </button>
+    </div>
+    <div id="menu-year">Nueva Granada · 1781 – 1830</div>
+  </div>
+
+  <!-- ── Panel selector de héroe ───────────────────────────── -->
+  <div id="hero-select-panel">
+    <div id="hs-header">
+      <div id="hs-title">Elige tu Historia</div>
+      <button id="hs-close">✕</button>
+    </div>
+    <p id="hs-subtitle">Cada héroe guarda su propio progreso</p>
+    <div id="hs-list"><!-- renderizado dinámicamente --></div>
+  </div>
+
+  <!-- ── Panel Minijuegos ──────────────────────────────────── -->
+  <div id="minigames-panel">
+    <div id="mgp-header">
+      <div id="mgp-title">Minijuegos</div>
+      <button id="mgp-close">✕</button>
+    </div>
+    <p id="mgp-subtitle">Practica los momentos más épicos de la historia</p>
+    <div id="mgp-list"><!-- renderizado dinámicamente --></div>
+  </div>
+
+  <!-- ── Panel Héroes ───────────────────────────────────── -->
+  <div id="heroes-panel">
+    <div id="heroes-header">
+      <div id="heroes-title">Héroes de Colombia</div>
+      <button id="heroes-close">✕</button>
+    </div>
+    <p id="heroes-subtitle">Personajes históricos · Elige tu historia</p>
+    <div id="heroes-grid"><!-- renderizado dinámicamente por engine.js --></div>
+  </div><!-- #heroes-panel -->
+
+  <!-- ── Panel Logros ───────────────────────────────────── -->
+  <div id="logros-panel">
+    <div id="logros-header">
+      <div id="logros-title">Logros</div>
+      <button id="logros-close">✕</button>
+    </div>
+    <div id="logros-content"><!-- renderizado dinámicamente por engine.js --></div>
+  </div><!-- #logros-panel -->
+
+  <!-- ── Menú de pausa ───────────────────────────────────── -->
+  <div id="pause-menu">
+    <div id="pause-title">Pausa</div>
+    <button id="pause-resume"   class="menu-btn primary">Continuar</button>
+    <button id="pause-menu-btn" class="menu-btn">Menú principal</button>
+    <button id="pause-restart"  class="menu-btn">Reiniciar</button>
+  </div>
+
+  <!-- ── Toast de nota ───────────────────────────────────── -->
+  <div id="note-toast">
+    <span id="note-toast-icon">📜</span>
+    <span id="note-toast-text">Nota histórica desbloqueada</span>
+  </div>
+
+  <!-- ── Minijuego overlay ─────────────────────────────── -->
+  <div id="minigame-overlay">
+    <div id="mg-header">
+      <div id="mg-title"></div>
+      <div id="mg-timer"></div>
+    </div>
+    <div id="mg-instructions"></div>
+    <div id="mg-arena"></div>
+    <div id="mg-result"></div>
+  </div>
+
+  <!-- ── Fade overlay ────────────────────────────────────── -->
+  <div id="fade-overlay"></div>
+
+</div><!-- #game -->
+
+<script src="js/story.js"></script>
+<script src="js/story_heroes.js"></script>
+<script src="js/engine.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => Engine.init());
+</script>
+</body>
+</html>

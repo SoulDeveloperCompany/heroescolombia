@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 844" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="tribunalGlow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#6a0808" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#2a0505" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="tribunalWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0806"/>
+      <stop offset="100%" stop-color="#0a0504"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="844" fill="url(#tribunalWall)"/>
+  <!-- Columnas imponentes -->
+  <g fill="#100604" opacity="0.95">
+    <rect x="20" y="0" width="55" height="760"/>
+    <rect x="405" y="0" width="55" height="760"/>
+    <rect x="95" y="80" width="45" height="680"/>
+    <rect x="340" y="80" width="45" height="680"/>
+    <!-- Capiteles -->
+    <rect x="15" y="0" width="65" height="25"/>
+    <rect x="400" y="0" width="65" height="25"/>
+    <rect x="90" y="75" width="55" height="20"/>
+    <rect x="335" y="75" width="55" height="20"/>
+  </g>
+  <!-- Estrado / tarima -->
+  <rect x="0" y="480" width="480" height="364" fill="#0d0604"/>
+  <rect x="0" y="476" width="480" height="8" fill="#1a0a06"/>
+  <!-- Mesa del tribunal -->
+  <rect x="80" y="380" width="320" height="18" fill="#200a06" rx="2"/>
+  <rect x="80" y="395" width="320" height="90" fill="#180806"/>
+  <rect x="85" y="398" width="60" height="12" fill="#0d0604" rx="1"/>
+  <rect x="200" y="395" width="80" height="12" fill="#0d0604" rx="1"/>
+  <rect x="335" y="398" width="60" height="12" fill="#0d0604" rx="1"/>
+  <!-- Escudo corona española en pared -->
+  <g fill="#2a0c08" opacity="0.7">
+    <rect x="210" y="60" width="60" height="80" rx="4"/>
+    <polygon points="210,60 240,40 270,60"/>
+    <!-- Cruz en escudo -->
+    <rect x="236" y="70" width="8" height="60" fill="#1a0806"/>
+    <rect x="216" y="88" width="48" height="8" fill="#1a0806"/>
+  </g>
+  <!-- Velas laterales -->
+  <g>
+    <rect x="108" y="320" width="6" height="65" fill="#f5ecd7" opacity="0.6"/>
+    <ellipse cx="111" cy="316" rx="3" ry="7" fill="#e08020" opacity="0.8"/>
+    <rect x="366" y="320" width="6" height="65" fill="#f5ecd7" opacity="0.6"/>
+    <ellipse cx="369" cy="316" rx="3" ry="7" fill="#e08020" opacity="0.8"/>
+  </g>
+  <!-- Luz del tribunal -->
+  <rect width="480" height="844" fill="url(#tribunalGlow)"/>
+  <!-- Oscuridad superior e inferior -->
+  <rect x="0" y="0" width="480" height="60" fill="#0a0504" opacity="0.8"/>
+  <radialGradient id="courtDark" cx="50%" cy="50%" r="55%">
+    <stop offset="30%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#060303" stop-opacity="0.8"/>
+  </radialGradient>
+  <rect width="480" height="844" fill="url(#courtDark)"/>
+</svg>
