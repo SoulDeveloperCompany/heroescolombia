@@ -597,6 +597,77 @@ const Engine = (() => {
     return '';
   }
 
+  // ── Sistema de Voz (Web Speech API) ─────────────────────
+  const Voice = (() => {
+    const synth = window.speechSynthesis || null;
+    let enabled = false;
+    let btnEl   = null;
+
+    // Detectar voz en español disponible
+    function getBestVoice() {
+      if (!synth) return null;
+      const voices = synth.getVoices();
+      // Preferir español latinoamericano, luego español genérico
+      return voices.find(v => /es[-_](CO|MX|AR|US)/i.test(v.lang))
+          || voices.find(v => /es/i.test(v.lang))
+          || null;
+    }
+
+    function speak(text, speakerId) {
+      if (!enabled || !synth) return;
+      synth.cancel();
+      const utt     = new SpeechSynthesisUtterance(text);
+      utt.lang      = 'es-CO';
+      utt.volume    = 0.92;
+      // Narrador: más lento y grave. Personajes: más vivo.
+      if (speakerId === 'narrador') {
+        utt.rate  = 0.82;
+        utt.pitch = 0.88;
+      } else if (speakerId === 'pensar') {
+        utt.rate  = 0.78;
+        utt.pitch = 1.05;
+      } else {
+        utt.rate  = 0.95;
+        utt.pitch = 1.0;
+      }
+      const voice = getBestVoice();
+      if (voice) utt.voice = voice;
+      synth.speak(utt);
+    }
+
+    function stop() {
+      if (synth) synth.cancel();
+    }
+
+    function setBtn(el) {
+      btnEl = el;
+      updateBtn();
+    }
+
+    function updateBtn() {
+      if (!btnEl) return;
+      btnEl.textContent = enabled ? '🔊' : '🔇';
+      btnEl.title       = enabled ? 'Voz: ON (toca para desactivar)' : 'Voz: OFF (toca para activar)';
+    }
+
+    function toggle() {
+      enabled = !enabled;
+      if (!enabled) stop();
+      updateBtn();
+      try { localStorage.setItem('hc_voice', enabled ? '1' : '0'); } catch(e) {}
+      return enabled;
+    }
+
+    function loadPref() {
+      try { enabled = localStorage.getItem('hc_voice') === '1'; } catch(e) {}
+      // Si el navegador no soporta TTS, deshabilitar silenciosamente
+      if (!synth) enabled = false;
+      updateBtn();
+    }
+
+    return { speak, stop, toggle, setBtn, loadPref };
+  })();
+
   // ── Mostrar línea ─────────────────────────────────────────
   function showLine() {
     if (!currentNode || state.lineIndex >= currentNode.lines.length) return;
@@ -607,13 +678,14 @@ const Engine = (() => {
     if ('char'  in line)      setCharacterImage(line.char);
     if (line.flags)           line.flags.forEach(f => applyFlag(f));
     if (line.note)            setTimeout(() => showNoteToast(line.note), 800);
+    Voice.speak(line.text, line.speaker);
     typewrite(line.text, cls);
   }
 
   // ── Avanzar ───────────────────────────────────────────────
   function advance() {
     if (state.inputLocked) return;
-    if (state.isTyping) { skipTypewrite(); return; }
+    if (state.isTyping) { Voice.stop(); skipTypewrite(); return; }
     state.lineIndex++;
     if (state.lineIndex >= currentNode.lines.length) {
       finishNode();
@@ -1513,6 +1585,13 @@ const Engine = (() => {
     DOM.dlgPanel.addEventListener('click', advance);
     DOM.dlgText.addEventListener('click', (e) => { e.stopPropagation(); advance(); });
 
+    // Botón de voz
+    const voiceBtn = $('btn-voice');
+    if (voiceBtn) {
+      Voice.setBtn(voiceBtn);
+      voiceBtn.addEventListener('click', () => Voice.toggle());
+    }
+
     $('btn-menu').addEventListener('click', () => DOM.pauseMenu.classList.toggle('visible'));
     $('btn-save').addEventListener('click', () => {
       saveGame();
@@ -1561,6 +1640,11 @@ const Engine = (() => {
   function init() {
     initDOM();
     setupInput();
+    Voice.loadPref();
+    // Esperar que el navegador cargue las voces disponibles
+    if (window.speechSynthesis) {
+      window.speechSynthesis.onvoiceschanged = () => {}; // fuerza carga de voces en Android WebView
+    }
     showMainMenu();
   }
 

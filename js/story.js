@@ -78,11 +78,11 @@ const Story = {
     a1_01: {
       id: 'a1_01',
       lines: [
-        { speaker: 'narrador', text: 'Las campanas de La Catedral marcan las seis de la mañana. La luz de septiembre entra fría por la ventana de mi cuarto en el callejón de las Nieves.', bg: 'mercado', bgImg: 'images/bg_bogota_amanecer.png', char: '' },
+        { speaker: 'narrador', text: 'Bogotá. Septiembre de 1817. Seis de la mañana.', bg: 'mercado', bgImg: 'images/bg_bogota_amanecer.png', char: '' },
         { speaker: 'pola',     text: 'El hilo índigo se enreda en la aguja. Mis manos no tiemblan. Aprendí hace tiempo a no permitírselo.' },
-        { speaker: 'narrador', text: 'Soy Policarpa Salavarrieta. Para los vecinos, una costurera humilde. Para el Virrey Sámano, nadie. Para quienes importan... algo diferente.' },
-        { speaker: 'pola',     text: 'Hoy tengo tres encargos: una falda para doña Mercedes Fernández, un chaleco para el capitán Valdés... y un mensaje que nadie debe ver.' },
-        { speaker: 'pensar',   text: 'Hace tres meses que los realistas fusilaron al doctor Rodríguez en la plaza. Lo vi morir. Desde entonces, el miedo se quedó en Bogotá como la niebla.' },
+        { speaker: 'narrador', text: 'Soy Policarpa Salavarrieta. Costurera para los vecinos. Para quienes importan... algo diferente.' },
+        { speaker: 'pola',     text: 'Hoy tengo tres encargos: una falda, un chaleco... y un mensaje que nadie debe ver.' },
+        { speaker: 'pensar',   text: 'Tres meses desde que fusilaron al doctor Rodríguez. Lo vi morir. El miedo nunca se fue.' },
       ],
       note: { id: 'lapola_historia', title: 'Nota histórica desbloqueada: La Pola' },
       next: 'a1_02',
@@ -91,9 +91,9 @@ const Story = {
     a1_02: {
       id: 'a1_02',
       lines: [
-        { speaker: 'narrador', text: 'Al bajar al mercado de la Plaza Mayor, el olor a tamales y aguardiente se mezcla con algo más oscuro: el miedo.', bgImg: 'images/bg_plaza_mercado.svg', char: 'images/pola_caminando.svg' },
+        { speaker: 'narrador', text: 'Plaza Mayor. Olor a tamales. A pólvora. A miedo.', bgImg: 'images/bg_plaza_mercado.svg', char: 'images/pola_caminando.svg' },
         { speaker: 'soldado',  text: '¡Documentos! Todo el que pase por aquí debe mostrar documentos de residencia.' },
-        { speaker: 'narrador', text: 'Hay cuatro soldados revisando cestas, bolsillos, miradas. Una mujer llora en silencio mientras un sargento revisa su canasta.' },
+        { speaker: 'narrador', text: 'Cuatro soldados. Cestas revisadas. Una mujer llora en silencio.' },
         { speaker: 'pola',     text: 'Buenos días, señor.' },
         { speaker: 'soldado',  text: 'Usted. ¿A dónde va? ¿Qué lleva en esa bolsa?' },
         { speaker: 'pola',     text: 'Telas, señor. Soy costurera. Trabajo para el capitán Valdés, puede preguntarle.' },
@@ -107,9 +107,9 @@ const Story = {
     a1_03: {
       id: 'a1_03',
       lines: [
-        { speaker: 'narrador', text: 'En casa del capitán Valdés, una mansión de piedra frente al parque Santander, la criada me lleva directamente al salón de costura.', bg: 'mercado', bgImg: 'images/bg_mansion_colonial.svg', char: 'images/pola_neutral.svg' },
-        { speaker: 'narrador', text: 'Mientras coso el chaleco militar, noto que el capitán olvidó papeles sobre su escritorio. Mapas. Fechas. Números de tropas.' },
-        { speaker: 'pensar',   text: 'Cuántos soldados se dirigen a Tunja. Cuándo. Por qué ruta. Todo está ahí, a tres pasos de mi aguja.' },
+        { speaker: 'narrador', text: 'Casa del capitán Valdés. Mansión de piedra. Silencio de poder.', bg: 'mercado', bgImg: 'images/bg_mansion_colonial.svg', char: 'images/pola_neutral.svg' },
+        { speaker: 'narrador', text: 'Papeles olvidados sobre el escritorio. Mapas. Fechas. Números de tropas.' },
+        { speaker: 'pensar',   text: 'Soldados a Tunja. Cuándo. Por qué ruta. Todo está ahí, a tres pasos de mi aguja.' },
         { speaker: 'pola',     text: 'Si leo esos papeles y me descubren, soy una mujer muerta. Pero si no los leo...' },
         { speaker: 'pensar',   text: 'Cuántos patriotas podrían morir por lo que no supe ver.' },
       ],
@@ -145,7 +145,7 @@ const Story = {
     a1_04: {
       id: 'a1_04',
       lines: [
-        { speaker: 'narrador', text: 'Esa noche, en mi cuarto, escucho pasos en la escalera. Alejo.', bgImg: 'images/bg_cuarto_noche.svg', char: 'images/pola_angustiada.svg' },
+        { speaker: 'narrador', text: 'Esa noche. Pasos en la escalera. Alejo.', bgImg: 'images/bg_cuarto_noche.svg', char: 'images/pola_angustiada.svg' },
         { speaker: 'alejo',    text: 'Policarpa. ¿Estás sola? Tengo que contarte algo.' },
         { speaker: 'pola',     text: 'Alejo, ¿qué haces aquí? Sabes que los vecinos hablan.' },
         { speaker: 'alejo',    text: 'Dejé de preocuparme por los vecinos hace tres meses. Escucha. Me unió a la resistencia. Llevamos mensajes para el general Santander.' },
@@ -211,8 +211,8 @@ const Story = {
     a1_05: {
       id: 'a1_05',
       lines: [
-        { speaker: 'narrador', text: 'Tres días después, Alejo me lleva a una reunión en la trastienda de la botica de don Evaristo. La sala huele a albahaca y a secreto.', bg: 'mercado' },
-        { speaker: 'narrador', text: 'Hay cuatro personas: Dominga, lavandera; el Padre Marcos, sacerdote; doña Inés, viuda de un comerciante; y un hombre joven que no se presenta.' },
+        { speaker: 'narrador', text: 'Tres días después. Trastienda de la botica. Olor a albahaca y a secreto.', bg: 'mercado' },
+        { speaker: 'narrador', text: 'Cuatro personas. Dominga la lavandera. El Padre Marcos. Doña Inés. Un joven sin nombre.' },
         { speaker: 'dominga',  text: 'Bienvenida, muchacha. Alejo nos habló de ti. Dicen que tienes manos de seda y ojos de halcón.' },
         { speaker: 'padreM',   text: 'Lo que se habla aquí, muere aquí. ¿Lo entiende, señorita Salavarrieta?' },
         { speaker: 'pola',     text: 'Lo entiendo, padre.' },
@@ -225,12 +225,12 @@ const Story = {
     a1_06: {
       id: 'a1_06',
       lines: [
-        { speaker: 'narrador', text: 'El Padre Marcos despliega un pequeño mapa sobre la mesa. Hay círculos marcados en distintas calles de Bogotá.', bg: 'mercado' },
+        { speaker: 'narrador', text: 'El Padre Marcos despliega un mapa. Círculos en las calles de Bogotá.', bg: 'mercado' },
         { speaker: 'padreM',   text: 'La primera misión es simple. Llevar este mensaje al señor Rincón, en la calle del Príncipe. Está cosido en el dobladillo de esta falda.' },
         { speaker: 'dominga',  text: 'Si la paran, dice que es un encargo de costura. Si insisten, dice que viene de casa de la señora Francisca. Ella ya está prevenida.' },
         { speaker: 'pola',     text: '¿Y si revisan la falda?' },
         { speaker: 'dona',     text: 'Entonces rezamos.' },
-        { speaker: 'narrador', text: 'El mensaje pesa menos que una pluma pero más que una piedra de molino.' },
+        { speaker: 'narrador', text: 'El mensaje pesa menos que una pluma. Más que una piedra.' },
       ],
       note: { id: 'costuras_mensaje', title: 'Nota histórica: Mensajes en el Tejido' },
       next: 'a1_07',
@@ -239,7 +239,7 @@ const Story = {
     a1_07: {
       id: 'a1_07',
       lines: [
-        { speaker: 'narrador', text: 'A mitad de camino por la calle del Arenal, un soldado me intercepta.', bg: 'exterior' },
+        { speaker: 'narrador', text: 'Calle del Arenal. A mitad de camino. Un soldado.', bg: 'exterior' },
         { speaker: 'soldado',  text: '¡Alto! Documentos y propósito de viaje.' },
         { speaker: 'pola',     text: 'Buenos días. Soy costurera. Llevo un encargo a la señora del señor Rincón.' },
         { speaker: 'soldado',  text: '¿Qué lleva en ese bulto?' },
@@ -278,10 +278,10 @@ const Story = {
     a1_08: {
       id: 'a1_08',
       lines: [
-        { speaker: 'narrador', text: 'El señor Rincón recibe la falda sin decir una palabra. Me entrega unas monedas de pago — la cobertura — y me cierra la puerta en silencio.', bg: 'mercado' },
-        { speaker: 'pola',     text: 'Y así empieza todo. No con un discurso ni con una bandera. Con una falda y un soldado aburrido en una calle gris.' },
-        { speaker: 'pensar',   text: 'Esa noche dormí mejor de lo que había dormido en meses. No por haber hecho algo heroico. Sino por haber hecho algo.' },
-        { speaker: 'narrador', text: 'En las semanas siguientes, aprendo los ritmos de la resistencia. Los mensajes, las señales, los silencios. Cada dobladillo es una pequeña victoria.' },
+        { speaker: 'narrador', text: 'El señor Rincón. Sin palabras. Monedas. Puerta cerrada.', bg: 'mercado' },
+        { speaker: 'pola',     text: 'Y así empieza todo. No con un discurso. Con una falda y un soldado aburrido.' },
+        { speaker: 'pensar',   text: 'Esa noche dormí mejor. No por hacer algo heroico. Sino por hacer algo.' },
+        { speaker: 'narrador', text: 'Semanas después. Aprendo los ritmos. Mensajes. Señales. Silencios. Cada dobladillo, una victoria.' },
         { speaker: 'dominga',  text: 'Eres buena en esto, muchacha. Mejor de lo que pensábamos. Quizás demasiado buena.' },
         { speaker: 'pola',     text: '¿Por qué demasiado buena?' },
         { speaker: 'dominga',  text: 'Porque a la gente demasiado buena la buscan los dos lados.' },
@@ -309,9 +309,9 @@ const Story = {
     a2_01: {
       id: 'a2_01',
       lines: [
-        { speaker: 'narrador', text: 'Ha pasado un mes. Ahora soy parte activa de la red. Conozco a doce personas. Ninguna sabe el nombre real de las otras.', bg: 'mercado' },
-        { speaker: 'pola',     text: 'Hoy tengo que convencer a Miguel Vargas de unirse a nosotros. Es un campesino que vende papas en el mercado. Los realistas lo necesitan para guiar tropas por los caminos de montaña.' },
-        { speaker: 'narrador', text: 'Si Miguel trabaja para la resistencia en vez de para los realistas, podemos desviar columnas enteras de soldados.' },
+        { speaker: 'narrador', text: 'Un mes después. Doce personas en la red. Nadie sabe el nombre real de nadie.', bg: 'mercado' },
+        { speaker: 'pola',     text: 'Hoy tengo que convencer a Miguel Vargas. Campesino. Vende papas. Los realistas lo usan de guía por los caminos de montaña.' },
+        { speaker: 'narrador', text: 'Si Miguel trabaja para nosotros, podemos desviar columnas enteras de soldados.' },
         { speaker: 'pensar',   text: 'Pero Miguel tiene miedo. Un miedo tan viejo y tan raíz como las papas que vende. ¿Cómo convences a alguien de arriesgar lo poco que tiene?' },
       ],
       choiceQuestion: '¿Cómo convence a Miguel?',
@@ -347,7 +347,7 @@ const Story = {
     a2_02: {
       id: 'a2_02',
       lines: [
-        { speaker: 'narrador', text: 'A la semana siguiente, la información de Miguel es exacta. Una columna de cien soldados toma el camino equivocado y los patriotas en Zipaquirá tienen tiempo de retirarse.', bg: 'mercado' },
+        { speaker: 'narrador', text: 'Una semana después. La información de Miguel es exacta. Cien soldados por el camino equivocado. Los patriotas de Zipaquirá se retiran.', bg: 'mercado' },
         { speaker: 'dominga',  text: 'La Pola, hay un problema. Arrestaron a Joaquín Caicedo. Lo llevan al cuartel de San Agustín.' },
         { speaker: 'pola',     text: '¿Joaquín? Dios mío. ¿Sabe algo comprometedor?' },
         { speaker: 'dominga',  text: 'Sabe dónde guardamos los mensajes que vienen del norte. Si habla, caemos doce personas.' },
@@ -388,7 +388,7 @@ const Story = {
     a2_03: {
       id: 'a2_03',
       lines: [
-        { speaker: 'narrador', text: 'El problema de Joaquín pasa. Pero deja una cicatriz. En mi pecho y en la red.', bg: 'mercado' },
+        { speaker: 'narrador', text: 'El caso Joaquín pasa. Pero deja cicatriz. En mí. En la red.', bg: 'mercado' },
         { speaker: 'padreM',   text: 'Hay otra cosa que deben saber. Creo que alguien de nuestra red podría estar informando a los realistas.' },
         { speaker: 'pola',     text: '¿Qué? ¿Tiene pruebas?' },
         { speaker: 'padreM',   text: 'Nada concreto. Pero tres veces nuestros mensajes han llegado tarde. Como si alguien supiera cuándo los mandamos.' },
@@ -402,10 +402,10 @@ const Story = {
     a2_04: {
       id: 'a2_04',
       lines: [
-        { speaker: 'narrador', text: 'Decido observar en silencio durante una semana. Cada movimiento, cada mirada, cada palabra fuera de lugar.', bg: 'mercado' },
-        { speaker: 'pola',     text: 'Y entonces lo veo. El hombre joven que nunca se presentó en la primera reunión. Lo veo hablar con un alguacil realista en la esquina de la carrera octava.' },
-        { speaker: 'pensar',   text: 'Puede tener una explicación. Puede ser un pariente. Puede ser una deuda. O puede ser que estemos todos muertos.' },
-        { speaker: 'narrador', text: 'Antes de poder actuar, Dominga llega con una noticia diferente: los realistas tienen información sobre un convoy patriota que parte hacia Zipaquirá.' },
+        { speaker: 'narrador', text: 'Observo en silencio. Una semana. Cada movimiento. Cada mirada.', bg: 'mercado' },
+        { speaker: 'pola',     text: 'Y entonces lo veo. El hombre sin nombre. Hablando con un alguacil realista. Carrera octava.' },
+        { speaker: 'pensar',   text: 'Puede ser un pariente. Una deuda. O puede ser que estemos todos muertos.' },
+        { speaker: 'narrador', text: 'Antes de actuar, Dominga llega con una noticia peor.' },
         { speaker: 'dominga',  text: 'Policarpa, alguien habló. Los generales en Honda van a caer en una emboscada si no les avisamos antes del amanecer.' },
         { speaker: 'pensar',   text: 'Una noche. Tengo una noche para decidir cómo hacer llegar la advertencia sin exponer la red entera.' },
       ],
@@ -442,7 +442,7 @@ const Story = {
     a2_05: {
       id: 'a2_05',
       lines: [
-        { speaker: 'narrador', text: 'El convoy se salva. Pero el precio es alto: el infiltrado sospecha que alguien en la red lo descubrió.', bg: 'mercado' },
+        { speaker: 'narrador', text: 'El convoy se salva. Pero el infiltrado sospecha que lo vimos.', bg: 'mercado' },
         { speaker: 'dominga',  text: 'Policarpa. El muchacho desapareció. No volvió a la reunión.' },
         { speaker: 'pola',     text: 'Entonces sabe que lo vimos.' },
         { speaker: 'alejo',    text: 'O fue él quien nos delató de nuevo. Y ahora tiene miedo de que tomemos represalias.' },
@@ -472,7 +472,7 @@ const Story = {
     a3_01: {
       id: 'a3_01',
       lines: [
-        { speaker: 'narrador', text: 'La primera semana de noviembre llega con lluvia y con noticias malas. Dos patriotas arrestados en Zipaquirá. Uno en Fontibón.', bg: 'celda' },
+        { speaker: 'narrador', text: 'Noviembre. Lluvia. Noticias malas. Dos patriotas arrestados en Zipaquirá. Uno en Fontibón.', bg: 'celda' },
         { speaker: 'pola',     text: 'El cerco se aprieta. Lo siento en el mercado, en las miradas de los soldados que antes me dejaban pasar sin preguntar.' },
         { speaker: 'alejo',    text: 'Policarpa, tenemos que hablar. El Padre Marcos dice que hay información de que alguien de tu descripción fue vista en casa del señor Rincón.' },
         { speaker: 'pola',     text: '¿Mi descripción? Hay cien mujeres en Bogotá de mi descripción.' },
